@@ -9,10 +9,16 @@
 		"build": "electron-builder",
 		"preview": "vite preview",
 		"build-icon": "electron-icon-builder --input=./resources/logout.png --output=./resources/png --flatten",
-		"lint": "eslint src/** --fix"
+		"lint": "eslint src/** --fix",
+		"commit": "cz"
 	},
 	"lint-staged": {
 		"*.{js,ts,vue}": "eslint src/** --fix"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
 	},
 	"dependencies": {
 		"@element-plus/icons-vue": "^2.1.0",
@@ -24,7 +30,11 @@
 		"vue-router": "4.2.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.6.6",
+		"@commitlint/config-conventional": "^17.6.6",
 		"@vitejs/plugin-vue": "^4.2.3",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"electron": "22",
 		"electron-builder": "23.1.0",
 		"electron-icon-builder": "^2.0.1",
@@ -34,6 +44,7 @@
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-simple-import-sort": "8.0.0",
 		"eslint-plugin-vue": "9.9.0",
+		"husky": "^8.0.3",
 		"lint-staged": "^13.2.3",
 		"prettier": "2.3.0",
 		"unplugin-auto-import": "^0.16.6",
