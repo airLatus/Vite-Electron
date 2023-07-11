@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/airLatus/Vite-Electron/compare/v0.0.1...v0.1.0) (2023-07-11)
+
+
+### ✨ Features | 新功能
+
+* ✨ 增加了关于xxx的一次功能更新，实现了xxx ([7b4e150](https://github.com/airLatus/Vite-Electron/commit/7b4e150485bc5d833f85456b523b1670c2ff2c18))
+
 ### 0.0.1 (2023-07-11)
 
 
