@@ -1,7 +1,7 @@
 {
 	"name": "xoxoxox",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "dist/electron/main/index.js",
 	"scripts": {
 		"dev": "vite",
@@ -10,14 +10,15 @@
 		"preview": "vite preview",
 		"build-icon": "electron-icon-builder --input=./resources/logout.png --output=./resources/png --flatten",
 		"lint": "eslint src/** --fix",
-		"commit": "cz"
+		"commit": "git-cz",
+		"release": "standard-version"
 	},
 	"lint-staged": {
 		"*.{js,ts,vue}": "eslint src/** --fix"
 	},
 	"config": {
 		"commitizen": {
-			"path": "cz-conventional-changelog"
+			"path": "git-cz"
 		}
 	},
 	"dependencies": {
@@ -44,9 +45,11 @@
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-simple-import-sort": "8.0.0",
 		"eslint-plugin-vue": "9.9.0",
+		"git-cz": "^4.9.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.2.3",
 		"prettier": "2.3.0",
+		"standard-version": "^9.5.0",
 		"unplugin-auto-import": "^0.16.6",
 		"unplugin-vue-components": "^0.25.1",
 		"vite": "^4.4.0",
