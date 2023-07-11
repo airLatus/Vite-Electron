@@ -2,12 +2,13 @@
 	<div>
 		<p>loading({{ timeRef }})......</p>
 		<el-button type="primary" @click="doHandleJump">jump to main directly</el-button>
-		<el-button type="danger" @click="doClose" :icon="Close" circle />
+		<el-button type="danger" :icon="Close" circle @click="doClose" />
 	</div>
 </template>
 
 <script setup>
 import {Close} from '@element-plus/icons-vue'
+
 import {ipcRendererSend} from '@/utils/ipcRenderer'
 const timeRef = ref(0) // 倒计时时间
 
@@ -34,6 +35,7 @@ const timer = setInterval(() => {
  */
 const doHandleJump = () => {
 	doClearTimer()
+
 	ipcRendererSend('loadFinished')
 }
 

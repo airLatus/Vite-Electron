@@ -7,12 +7,13 @@
 		<el-button type="primary" @click="doHandleDecrease">-1</el-button>
 		<el-button type="primary" @click="doHandleIncrease">+1</el-button>
 		<el-button type="primary" @click="doIntoDetails">into details</el-button>
-		<el-button type="danger" @click="doClose" :icon="Close" circle />
+		<el-button type="danger" :icon="Close" circle @click="doClose" />
 	</div>
 </template>
 <script setup>
 import {Close} from '@element-plus/icons-vue'
 import {useRouter} from 'vue-router'
+
 import {useCounterStore} from '@/stores/counter'
 import {ipcRendererSend} from '@/utils/ipcRenderer'
 const storeCounter = useCounterStore() // pinia存储的全局count

@@ -1,8 +1,8 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import loadComponent from '@/views/load/load.vue'
-import homeComponent from '@/views/main/main.vue'
-import detailsComponent from '@/views/details/details.vue'
+import detailsComponent from '@/views/details/mainDetails.vue'
+import loadComponent from '@/views/load/loadProcess.vue'
+import homeComponent from '@/views/main/mainWindow.vue'
 
 const routes = [
 	{
