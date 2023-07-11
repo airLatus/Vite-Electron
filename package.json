@@ -1,7 +1,7 @@
 {
 	"name": "xoxoxox",
 	"private": true,
-	"version": "0.0.2",
+	"version": "0.0.1",
 	"main": "dist/electron/main/index.js",
 	"scripts": {
 		"dev": "vite",
@@ -13,7 +13,8 @@
 		"commit": "git-cz",
 		"release-major": "standard-version --release-as major",
 		"release-minor": "standard-version --release-as minor",
-		"release-patch": "standard-version --release-as patch"
+		"release-patch": "standard-version --release-as patch",
+		"release-static": "standard-version --release-as 0.0.1"
 	},
 	"lint-staged": {
 		"*.{js,ts,vue}": "eslint src/** --fix"
