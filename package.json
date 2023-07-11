@@ -1,7 +1,7 @@
 {
 	"name": "xoxoxox",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"main": "dist/electron/main/index.js",
 	"scripts": {
 		"dev": "vite",
@@ -11,7 +11,9 @@
 		"build-icon": "electron-icon-builder --input=./resources/logout.png --output=./resources/png --flatten",
 		"lint": "eslint src/** --fix",
 		"commit": "git-cz",
-		"release": "standard-version"
+		"release-major": "standard-version --release-as major",
+		"release-minor": "standard-version --release-as minor",
+		"release-patch": "standard-version --release-as patch"
 	},
 	"lint-staged": {
 		"*.{js,ts,vue}": "eslint src/** --fix"
