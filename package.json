@@ -1,0 +1,40 @@
+{
+	"name": "xoxoxox",
+	"private": true,
+	"version": "0.0.0",
+	"main": "dist/electron/main/index.js",
+	"scripts": {
+		"dev": "vite",
+		"prebuild": "vite build && electron-builder",
+		"build": "electron-builder",
+		"preview": "vite preview",
+		"build-icon": "electron-icon-builder --input=./resources/logout.png --output=./resources/png --flatten"
+	},
+	"dependencies": {
+		"@element-plus/icons-vue": "^2.1.0",
+		"axios": "1.2.3",
+		"element-plus": "^2.3.7",
+		"normalize.css": "8.0.1",
+		"pinia": "2.1.0",
+		"vue": "^3.3.4",
+		"vue-router": "4.2.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.2.3",
+		"electron": "22",
+		"electron-builder": "23.1.0",
+		"electron-icon-builder": "^2.0.1",
+		"electron-log": "^4.4.8",
+		"eslint": "8.33.0",
+		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"eslint-plugin-simple-import-sort": "8.0.0",
+		"eslint-plugin-vue": "9.9.0",
+		"prettier": "3.0",
+		"unplugin-auto-import": "^0.16.6",
+		"unplugin-vue-components": "^0.25.1",
+		"vite": "^4.4.0",
+		"vite-plugin-electron": "0.7.5",
+		"vue-global-api": "^0.4.1"
+	}
+}

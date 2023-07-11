@@ -1,0 +1,36 @@
+{
+	"appId": "YourAppID",
+	"asar": true,
+	"directories": {
+		"output": "release/${version}"
+	},
+	"files": ["dist", "resources"],
+	"mac": {
+		"icon": "resources/icons/mac/icon.icns",
+		"artifactName": "${productName}_${version}.${ext}",
+		"target": ["dmg"]
+	},
+	"win": {
+		"icon": "resources/icons/win/icon.ico",
+		"target": [
+			{
+				"target": "nsis",
+				"arch": ["x64"]
+			}
+		],
+		"artifactName": "${productName}_${version}.${ext}"
+	},
+	"nsis": {
+		"oneClick": false,
+		"allowElevation": true,
+		"perMachine": false,
+		"allowToChangeInstallationDirectory": true,
+		"deleteAppDataOnUninstall": false,
+		"installerIcon": "",
+		"uninstallerIcon": "",
+		"createDesktopShortcut": true,
+		"createStartMenuShortcut": true,
+		"runAfterFinish": true,
+		"shortcutName": "预研测试DEMO"
+	}
+}
